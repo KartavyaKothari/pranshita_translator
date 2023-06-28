@@ -1,0 +1,289 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 50px auto;
+    width: 600px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4287f5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .window {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  #display-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-blue {
+    background-color: #4287f5;
+    color: white;
+  }
+  
+  .button-green {
+    background-color: #34c759;
+    color: white;
+  }
+  
+  .button-red {
+    background-color: #ff3b30;
+    color: white;
+  }
+  
+  .button-orange {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  .button-purple {
+    background-color: #af52de;
+    color: white;
+  }
+  
+  .button-yellow {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  .button-cyan {
+    background-color: #5ac8fa;
+    color: white;
+  }
+  
+  .button-pink {
+    background-color: #ff2d55;
+    color: white;
+  }
+  
+  .button-teal {
+    background-color: #64d2ff;
+    color: white;
+  }
+  
+  .button-lime {
+    background-color: #c4ff00;
+    color: white;
+  }
+  
+  .window {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #display-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4287f5;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent horizontal scrollbar due to animation */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-blue {
+    background-color: #4287f5;
+    color: white;
+  }
+  
+  .button-green {
+    background-color: #34c759;
+    color: white;
+  }
+  
+  .button-red {
+    background-color: #ff3b30;
+    color: white;
+  }
+  
+  .button-orange {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  .button-purple {
+    background-color: #af52de;
+    color: white;
+  }
+  
+  .button-yellow {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  .button-cyan {
+    background-color: #5ac8fa;
+    color: white;
+  }
+  
+  .button-pink {
+    background-color: #ff2d55;
+    color: white;
+  }
+  
+  .button-teal {
+    background-color: #64d2ff;
+    color: white;
+  }
+  
+  .button-lime {
+    background-color: #c4ff00;
+    color: white;
+  }
+  
+  .window {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #display-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4287f5;
+  }
+  
+  /* @keyframes backgroundAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  body {
+    animation: backgroundAnimation 1s ease infinite alternate;
+    background: linear-gradient(
+      45deg,
+      #ffcc00,
+      #4287f5,
+      #ff2d55,
+      #34c759,
+      #af52de,
+      #ff9500,
+      #5ac8fa,
+      #ff3b30,
+      #c4ff00,
+      #64d2ff,
+      #ffcc00
+    );
+    background-size: 400% 400%;
+  } */
+
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: calc(var(--mouse-x) * 1%) calc(var(--mouse-y) * 1%);
+    }
+  }
+  
+  body {
+    animation: backgroundAnimation 1s ease infinite alternate;
+    background: linear-gradient(
+      45deg,
+      #ffcc00,
+      #4287f5,
+      #ff2d55,
+      #34c759,
+      #af52de,
+      #ff9500,
+      #5ac8fa,
+      #ff3b30,
+      #c4ff00,
+      #64d2ff,
+      #ffcc00
+    );
+    background-size: 400% 400%;
+  }
+  
