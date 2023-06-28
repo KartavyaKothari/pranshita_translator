@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    :root {
+      --mouse-x: 50;
+      --mouse-y: 50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pranshita Translator</h1>
+    <div class="button-container">
+      <button class="button-blue" onclick="displayText('she misses you')">Ssup</button>
+      <button class="button-green" onclick="displayText('she cares about you')">What is wrong, tell me tell me</button>
+      <button class="button-red" onclick="displayText('she feels comfortable ranting to you')">Yaarrrrr</button>
+      <button class="button-orange" onclick="displayText('I\'m not interested Yarr, meko sunna hi nahi hai')">Ohhh</button>
+      <button class="button-purple" onclick="displayText('I love this, really really awesome!')">Awww</button>
+      <button class="button-yellow" onclick="displayText('she feels safe with you')">I'm upset</button>
+      <button class="button-cyan" onclick="displayText('I hate planning but I\'m excited as fuck for this!')">Let's plan it</button>
+      <button class="button-pink" onclick="displayText('Impressive shizzzz')">Wowow</button>
+      <!-- <button class="button-teal" onclick="displayText('Teal Button')">Teal</button>
+      <button class="button-lime" onclick="displayText('Lime Button')">Lime</button> -->
+    </div>
+    <div class="window">
+      <p id="display-text">Click a button to display text here</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const { clientX, clientY } = e;
+      const { innerWidth, innerHeight } = window;
+
+      const x = (clientX / innerWidth) * 100;
+      const y = (clientY / innerHeight) * 100;
+
+      document.documentElement.style.setProperty('--mouse-x', x);
+      document.documentElement.style.setProperty('--mouse-y', y);
+    });
+    function displayText(text) {
+  var display = document.getElementById('display-text');
+  display.textContent = text;
+}
+  </script>
+</body>
+</html>
